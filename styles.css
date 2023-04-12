@@ -25,6 +25,23 @@
     background-color: #f9fafb;
     height: 100vh;
     flex: 2;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4vw;
+    padding-right: 20vw;
+}
+
+.signup-container > div {
+    flex: 1;
+    border: 5px solid red;
+}
+
+.signup-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1rem;
 }
 
 .logo-container {
@@ -38,6 +55,8 @@
 }
 
 .logo-text {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    padding: 30px;
 }
 
 .credit-container {
