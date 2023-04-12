@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-container {
+    display: flex;
+}
+
+.splash-image-container {
+    color: white;
+    height: 100vh;
+    flex: 1;
+    background-image: url(splash.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.signup-container {
+    background-color: #f9fafb;
+    height: 100vh;
+    flex: 2;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 3;
+    font-size: 3vw;
+    font-family: 'Gruppo', cursive;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.logo-text {
+}
+
+.credit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex: 2;
+    font-size: 1rem;
+}
+
+.credit-container > p {
+    padding-bottom: 10px;
+}
+
+.credit-text > a {
+    color: white;
+}
+
