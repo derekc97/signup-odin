@@ -33,24 +33,24 @@
             </div>
             <div class="signup-form">
                 <div>
-                    <h1>Ready up!</h1>
+                    <h1>Let's do this!</h1>
                 </div>
                 <div class="form">
                     <form>
                         <div class="form-row">
                             <div class="form-input">
                             <label for="first-name">*First Name</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first-name" required>
                         </div>
                         <div class="form-input">
                             <label for="last-name">*Last Name</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last-name" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-input">
                             <label for="email">*Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-input">
                             <label for="phone-num">Phone Number</label>
@@ -60,17 +60,23 @@
                     <div class="form-row">
                         <div class="form-input">
                             <label for="password">*Password</label>
-                            <input type="password" id="password" name="password">
+                            <input type="password" id="password" name="password" required minlength="8" maxlength="16">
                         </div>
                         <div class="form-input">
                             <label for="confirm-pass">*Confirm Password</label>
-                            <input type="password" id="confirm-pass" name="confirm-pass">
+                            <input type="password" id="confirm-pass" name="confirm-pass" required minlength="8" maxlength="16">
                         </div>
                     </div>
-                    </form>
+                    <!-- </form> -->
                 </div>
             </div>
-            <div class="signup-bottom"></div>
+            <div class="signup-bottom">
+                <div class="signup-bottom-row">
+                    <button type="submit">Ready Up</button> <br>
+                </form>
+                    <p>Already have an account? <a href="/">Log in!</a></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

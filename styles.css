@@ -22,7 +22,8 @@
 
 
 .signup-container {
-    background-color: #379CB6;
+    background-image: linear-gradient(180deg, #171438, #2b2852);
+    color: white;
     height: 100vh;
     flex: 2;
     font-family: sans-serif;
@@ -49,13 +50,16 @@
 }
 
 .signup-form {
-    background-color: #aad7e1;
-    /* border-top: 1px solid #236879;
-    border-bottom: 1px solid #236879; */
-    border: 2px solid #236879;
+    /* border-bottom: 2px solid #236879;
+    border-top: 2px solid #236879; */
+    background-color: white;
+    color: #171438;
+    padding-top: 10px;
+    box-shadow: 0px 0px 5px;
+    /* color: white; */
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .signup-form > div > h1 {
@@ -137,4 +141,46 @@ input[type=text], input[type=email], input[type=tel], input[type=password] {
 input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
     border: none;
     border-bottom: 1px solid black;
+}
+
+input[type=text]:invalid, input[type=email]:invalid, input[type=tel]:invalid, input[type=password]:invalid {
+    border: none;
+    border-bottom: 1px solid red;
+}
+
+.signup-bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-bottom > div {
+    flex: 1;
+    padding-top: 2rem;
+}
+
+.signup-bottom-row > button {
+    margin-bottom: 1.25rem;
+    border: 1px solid white;
+    background-color: #171438;
+    color: white;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+.signup-bottom-row > button:hover {
+    background-color: white;
+    color: #171438;
+    border: 1px solid #171438;
+}
+
+.signup-bottom-row > p > a {
+    text-decoration: none;
+    color: #c1bbf5;
+    font-weight: 700;
+}
+
+.signup-bottom-row > p > a:hover {
+    text-decoration: underline;
 }
