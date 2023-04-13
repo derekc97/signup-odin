@@ -22,19 +22,19 @@
 
 
 .signup-container {
-    background-color: #f9fafb;
+    background-color: #379CB6;
     height: 100vh;
     flex: 2;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    padding-left: 4vw;
-    padding-right: 20vw;
 }
 
 .signup-container > div {
     flex: 1;
-    border: 5px solid red;
+    /* border: 5px solid red; */
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 .signup-text {
@@ -42,6 +42,24 @@
     flex-direction: column;
     justify-content: space-evenly;
     font-size: 1rem;
+}
+
+.signup-text > div > p {
+    font-weight: 600;
+}
+
+.signup-form {
+    background-color: #aad7e1;
+    /* border-top: 1px solid #236879;
+    border-bottom: 1px solid #236879; */
+    border: 2px solid #236879;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.signup-form > div > h1 {
+    padding: 10px 0 10px 0;
 }
 
 .logo-container {
@@ -75,3 +93,48 @@
     color: white;
 }
 
+
+
+.form > form {
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid blue; */
+}
+
+.form-input > label {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: #222d28;
+    font-weight: 500;
+}
+
+.form-row {
+    /* border: 2px solid green; */
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.form-input {
+    /* border: 2px solid red; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=password] {
+    text-decoration: none;
+    /* border: 1px solid grey; */
+    border: none;
+    background: none;
+    border-bottom: 1px solid grey;
+    height: 1.5rem;
+    /* border-radius: 4px; */
+    width: 90%;
+    padding: 0.5rem;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
+    border: none;
+    border-bottom: 1px solid black;
+}
